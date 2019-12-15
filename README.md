@@ -1,4 +1,4 @@
-![BLADE](resources/BLADE.png)
+![BLADE](https://raw.githubusercontent.com/bluwireless/blade/master/documentation/source/_static/images/BLADE.png)
 
 ---
 
