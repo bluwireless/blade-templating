@@ -15,3 +15,9 @@ Like BLADE, the templator is a Python based tool and has a few dependencies:
  * [Mako](https://pypi.org/project/Mako/) - The underlying templating engine
  * [DesignFormat](https://github.com/bluwireless/designformat) - The interchange format used by BLADE
 
+## Installing from PyPI
+You can install BLADE Templating with its dependencies direct from PyPI:
+
+```bash
+$> pip install blu-blade-templating
+```
