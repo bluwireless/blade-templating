@@ -16,21 +16,31 @@
 # BLADE.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-from distutils.core import setup
+from setuptools import setup
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
 setup(
-    name            ="BLADE-Templating",
-    version         ="1.0",
-    license         =['GNU General Public License v3.0'],
-    description     =
+    name="blu-blade-templating",
+    version="1.0",
+    license='GNU General Public License v3.0',
+    description=
         "Templating Engine for Generating Hardware from BLADE Output Blobs Based"
         " on Mako"
     ,
-    author          ='Blu Wireless Ltd',
-    packages        =[
+    long_description=long_description,
+    long_description_content_type='text/markdown',
+    author='Blu Wireless Ltd',
+    url='https://www.bluwireless.com',
+    project_urls={
+        'Source': 'https://github.com/bluwireless/blade-templating',
+        'Tracker': 'https://github.com/bluwireless/blade-templating/issues',
+    },
+    packages=[
         'blade_templating', 'blade_templating.common'
     ],
-    entry_points    ={
+    entry_points={
         'console_scripts': ['blade-templating=blade_templating.__main__:main']
     },
     install_requires=[
@@ -40,7 +50,7 @@ setup(
         'tqdm',
         'designformat',
     ],
-    extras_require  ={
+    extras_require={
         "documentation": [
             'sphinx',
             'recommonmark',
